@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <link rel="shortcut icon" href="favicon.bat.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family:'Valentine';
+            src: url('fontes/Valentine.otf') format(opentype), url(fontes/Valentine.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        /*
+            tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded - opentype
+            - truetype aat - Apple Advanced Typographic
+            - svg
+        */
+
+        body {
+            background-image: linear-gradient(to left, #fff, rgb(243, 146, 199));
+            font-family: 'Valentine', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(253, 49, 134);
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.486);
+            width: 500px;
+            padding: 20px;
+            margin: auto;
+            text-align:center;
+        }
+
+        h1 {
+            font-family: 'Valentine', Times, serif;
+            font-size: 4em;
+            color: rgb(255, 24, 120);
+            font-weight: normal;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Amor</h1>
+        <p>💗Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores non fugit at qui excepturi dolorem odio voluptate illum dolor sed maiores, sunt aliquam amet nesciunt numquam, natus distinctio. Nam, aut.💗</p>
+    </main>
+</body>
+</html>
