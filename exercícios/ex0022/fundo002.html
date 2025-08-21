@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando imagens de fundo part.02</title>
+    <link rel="shortcut icon" href="favicon.bat.ico" type="image/x-icon">
+
+    <style>
+
+        body {
+            background-image: url(imagens/wallpaper004.jpg);
+        }
+
+        h1 {
+            text-align: center;
+            font-family:monospace;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: monospace;
+        }
+
+        h2 > a {
+            text-decoration: none;
+            color: rgb(54, 54, 54);
+        }
+
+        h2 > a:hover {
+            border-style: dashed;
+            border-color: rgb(71, 71, 71);
+            border-radius: 10px;
+            color: black;
+            border-color: rgba(0, 0, 0, 0.164);
+            width: 10px;
+            height: 20px;
+            transition-duration: 0.5s;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        }
+
+        div#q1 {
+            background-color: indigo;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, blueviolet, black);
+        }
+
+        div#q3 {
+            background-image: radial-gradient(blueviolet, lightgray);
+        }
+
+        div#q4 {
+            background-image: url(imagens/pattern003.png);
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando imagens de fundo</h1>
+    <h2>Teste criado por <a href="https://github.com/evelineyara" target="_blank">Evelin Nayara</a></h2>
+
+    <main>
+        <div class="quadrado" id="q1">
+        </div>
+        <div class="quadrado" id="q2">
+        </div>
+        <div class="quadrado" id="q3">
+        </div>
+        <div class="quadrado" id="q4">
+        </div>
+    </main>
+
+</body>
+</html>
