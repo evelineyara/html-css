@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Henny+Penny&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Mansalva&family=Manufacturing+Consent&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Quicksand:wght@300..700&family=Shadows+Into+Light+Two&display=swap');
+
+:root {
+    --fonte01: "Nunito", cursive;
+    --fonte02: "Cookie", cursive;
+    --fonte03: "Caveat", cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +16,7 @@
 html, body {
     background-color: darkgray;
     min-height: 100vh; /*100% da view hight, altura*/
+    font-family: var(--fonte01);
 }
 
 header {
@@ -20,6 +29,8 @@ header > h1 {
     padding-top: 50px;
     /*text-transform: uppercase; joga todas as letras para maiúsculas*/
     font-variant: small-caps; /*todas as letras maiúsculas porém com as iniciais maiores.*/
+    font-size: 8vw; /*view width, largura da view port*/
+    font-family: var(--fonte01);
 }
 
 header > p {
@@ -31,6 +42,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte03);
+    font-weight: normal;
+    font-size: 3vw;
 }
 
 section.normal {
@@ -45,7 +59,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.322);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     color: white;
 }
 
