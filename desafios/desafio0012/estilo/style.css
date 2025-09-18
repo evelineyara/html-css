@@ -29,7 +29,7 @@ header > h1 {
     padding-top: 50px;
     /*text-transform: uppercase; joga todas as letras para maiúsculas*/
     font-variant: small-caps; /*todas as letras maiúsculas porém com as iniciais maiores.*/
-    font-size: 8vw; /*view width, largura da view port*/
+    font-size: 5vw; /*view width, largura da view port*/
     font-family: var(--fonte01);
 }
 
@@ -44,7 +44,11 @@ section {
     padding-left: 30px;
     font-family: var(--fonte03);
     font-weight: normal;
-    font-size: 3vw;
+    font-size: 2.8vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -55,13 +59,27 @@ section.normal {
 section.imagem {
     background-color: rgb(37, 37, 37);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.658);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(0, 0, 0, 0.781);
     display: inline-block;
     padding: 5px;
     color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.911);
+}
+
+section#img01 {
+    background-image: url(../imagens/social-media.jpg);
+    background-position: center;
+}
+
+section#img02 {
+    background-image: url(../imagens/cartas.jpg);
+    background-position: center;
 }
 
 a {
