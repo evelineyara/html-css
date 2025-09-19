@@ -52,14 +52,14 @@ section > p {
 }
 
 section.normal {
-    background-color: white;
+   background-image: linear-gradient(to right, rgb(161, 161, 161), rgb(0, 0, 0));
     color: black;
 }
 
 section.imagem {
     background-color: rgb(37, 37, 37);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.658);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.315);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -69,7 +69,9 @@ section.imagem > p {
     display: inline-block;
     padding: 5px;
     color: white;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.911);
+    font-weight: normal;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.301);
+    border-radius: 10px;
 }
 
 section#img01 {
@@ -89,7 +91,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    color: indigo;
     transition-duration: 0.5s;
 }
 
