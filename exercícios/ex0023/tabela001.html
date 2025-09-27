@@ -13,6 +13,7 @@
         
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
             /*collapse - "gruda" as linhas da tabela.*/
             border: 2px solid rgb(46, 0, 78);
@@ -27,12 +28,18 @@
         }
 
         td {
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: top; /*alinhamento vertical, top, midle(meio), bottom*/
             border: 1px solid black;
             padding: 8px;
         }
 
         td.dado {
-            background-image: linear-gradient(to bottom, black,white);
+            background-image: linear-gradient(to top, black,white);
+        }
+
+        .numero {
+            text-align: right;
         }
 
     </style>
@@ -59,7 +66,7 @@
                 <tr class="linha">
                     <td>A2</td>
                     <td>B2</td>
-                    <td>C2</td>
+                    <td class="numero">C2</td>
                 </tr>
 
                 <tr>
@@ -67,7 +74,7 @@
                     <td class="dado">
                         B3
                     </td>
-                    <td>C3</td>
+                    <td class="numero">C3</td>
                 </tr>
 
                  <tr>
