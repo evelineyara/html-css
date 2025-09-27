@@ -23,6 +23,20 @@
             border: 2px solid black;
         }
 
+        /*
+        EFEITO ZEBRADO
+        :nth-child(2n)
+
+        EVEN = PAR
+        ODD = ÍMPAR
+        2N-1 = ÍMPAR
+        2N = PAR
+        
+        */
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
         }
