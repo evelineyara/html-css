@@ -27,6 +27,13 @@
             text-align: right;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background: rgba(76, 0, 130, 0.473);
+        }
+
         thead {
             background-color: black;
             color: white;
@@ -45,19 +52,30 @@
     ANATOMIA PARA TABELAS GRANDES
 
     TABLE
-        THEAD
+        CAPTION
+
+        THEAD - título
             TR, TD, TH
-        TBODY
+
+        TBODY - conteúdo
             TR, TD, TH
+
         TFOOT
             TR, TD, TH
+
+
+            COL = COLUNA
+            ROW = LINHA
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th> <!--cabeçalho-->
-                <th>População</th>
+                <th scope="col">Estado</th> <!--cabeçalho-->
+                <th scope="col" style="width: 60px;">
+                    População
+                </th>
             </tr>
         </thead>
         
@@ -80,7 +98,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>43 025 683</strong></td>
             </tr>
         </tfoot>
