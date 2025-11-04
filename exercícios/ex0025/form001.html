@@ -8,23 +8,33 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
         }
 
         input {
-            border-radius: 8px;
+            border-radius: 6px;
         }
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="Nome" id="Nome">
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- *method
+        por padrão vem em get, onde aparece todos os dados na url. 
+        com o method="post", os dados digitados não aparecem na url, porém não estão 100% seguros, pois pelo devtools por exemplo, é possível inspecionar e encontrar os dados dgitados. 
+        
+        get = para dados insensíveis e compartilháveis, só pode usar até 3mil letras.
+
+        post = para dados sensíveis (para proteger os dados estudar https), para dados particulares e para imagens, etc. -->
+        <p>
+            <label for="iNome">Nome:</label>
+            <input type="text" name="Nome" id="iNome">
         </p>
 
-        <p>Sobrenome: <input type="text" name="Sobrenome" id="Sobrenome">
+        <p>
+            <label for="iSobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="iSobrenome">
         </p>
-
+        <!--*label* é etiqueta de identificação. colocamos nela o id.-->
         <p>
             <input type="submit" value="Enviar">
         </p>
