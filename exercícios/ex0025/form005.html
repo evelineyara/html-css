@@ -11,7 +11,22 @@
 </head>
 <body>
     <h1>Exemplos de Formulários</h1>
-    <form action="" method="get" autocomplete="on"></form>
+    <form action="" method="get" autocomplete="on">
+    </form>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmasc"> <label for="isxmasc">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+           <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+
+           <label for="esfut"><input type="checkbox" name="esbasq" id="iebasq"> <label for="iebasq">Basquete</label></label>
+
+           <input type="checkbox" name="esnatação" id="iesnatação"> <label for="iesnatação">Natação</label>
+        </fieldset>
 
     <p>
         <input type="submit" value="Enviar">
@@ -19,3 +34,9 @@
     </p>
 </body>
 </html>
+
+<!--todo botão de radio tem que ter o mesmo nome, marca apenas um.--
+
+sempre colocar o id diferente.
+
+todo botão checkbox pode escolher mais de uma opção.>
