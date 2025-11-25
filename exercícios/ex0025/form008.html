@@ -9,9 +9,8 @@
         body {
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: normal;
-            background-image: linear-gradient(to left, rgb(61, 0, 104), white);
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.829), white);
             text-align: center;
-            color: rgb(20, 1, 34);
         }
 
         p input {
@@ -25,14 +24,17 @@
         <form action="cadastro.php" method="get" autocomplete="on"></form>
         <p>
            <label for="in1">Número 01</label>
-           <input type="number" name="n1" id="in1" min="0" max="50" required>
+           <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.InnerHTML = Number(in1.velue) + Number(in2.velue)">
         </p>
         <p>
            <label for="in2">Número 02</label>
            <input type="number" name="n2" id="in2" min="0" max="50" required>
         </p>
 
-        <br>
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
 
         <p>
             <input type="submit" value="Enviar">
