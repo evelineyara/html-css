@@ -5,30 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="shortcut icon" href="../favicon.bat.ico" type="image/x-icon">
-    <style>
-        body {
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-weight: normal;
-            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.829), white);
-            text-align: center;
-        }
-
-        p input {
-            border-radius: 15px;
-            padding: 5px;
-        }
-    </style>
 </head>
 <body>
         <h1>Exemplo de Formulário</h1>
         <form action="cadastro.php" method="get" autocomplete="on"></form>
         <p>
            <label for="in1">Número 01</label>
-           <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.InnerHTML = Number(in1.velue) + Number(in2.velue)">
+           <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.velue) + Number(in2.velue)">
         </p>
         <p>
            <label for="in2">Número 02</label>
-           <input type="number" name="n2" id="in2" min="0" max="50" required>
+           <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.velue) + Number(in2.velue)">
         </p>
 
         <p>
