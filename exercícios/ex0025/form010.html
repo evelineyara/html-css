@@ -6,7 +6,19 @@
     <title>Formulário</title>
     <link rel="shortcut icon" href="../favicon.bat.ico" type="image/x-icon">
     <style>
+        body {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: normal;
 
+            background-image: linear-gradient(to right, indigo, rgb(82, 4, 112), transparent);
+            margin: auto;
+        }
+
+        label, input {
+            border-radius: 20px;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
@@ -15,11 +27,12 @@
 
         <p>
             <label for="iano">Em que ano você nasceu?</label>
-            <input type="number" name="ano" id="iano" min="1900" max="2025" value="2000" required>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" required oninput="calcidade()">
         </p>
 
         <p>
-            <label for="iidade">Qual sua idade?</label>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
             
         </p>
 
@@ -28,5 +41,12 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 </html>
