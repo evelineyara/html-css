@@ -7,16 +7,17 @@
 }
 
 body, html {
-    background-color: rgba(117, 117, 117, 0.37);
+   background-color: rgba(0, 0, 0, 0.534);
 }
 
 header {
-    background-color: rgb(58, 58, 58);
+   background-image: linear-gradient(to right, black, transparent);
 }
 
 header > h1 {
     padding: 10px;
     text-align: center;
+    color: white;
 }
 
 menu {
@@ -31,14 +32,14 @@ menu a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
-    border-top: solid rgb(128, 123, 123);
+    border-top: solid rgba(43, 43, 43, 0.575);
 }
 
 menu > ul > li > a:hover {
-    background-color: gray;
+   background-image: linear-gradient(to left,  rgb(43, 2, 95), rgb(5, 5, 90), rgba(76, 0, 130, 0.459), transparent);
 }
 
 main {
@@ -46,8 +47,10 @@ main {
     background-color: white;
     margin: auto;
     padding: 10px;
+    padding-top: 20px;
     border-radius: 10px;
     margin-top: 10px;
+    text-align: center;
 }
 
 article > h2 {
