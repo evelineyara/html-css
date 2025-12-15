@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query 005</title>
-    <link rel="shortcut icon" href="../imagens/favicon.bat.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="../favicon.bat.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Media Query 005</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 01</a></li>
                 <li><a href="#">Opção 01</a></li>
@@ -30,5 +32,23 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil quos voluptatibus. Molestias, provident. Atque, doloremque corporis maxime saepe in omnis dignissimos esse, assumenda cupiditate mollitia ipsa? Maxime, facilis illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio esse quibusdam officiis provident nostrum? Eaque harum reprehenderit minus, libero ut consequatur iste vitae numquam illum. Accusamus libero doloribus vel modi.</p>
         </article>
     </main>
+    <!--
+
+    JavaScript - Condicional (conteúdo abaixo)
+    if - se
+    else - senão
+    = recebe
+    == igual
+
+    -->
+    <script>
+        function clickMenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
